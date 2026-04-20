@@ -7,7 +7,8 @@ jika ‘2’ aktif maka LED akan terus berkedip sampai perintah selanjutnya dibe
 berikan penjelasan disetiap baris kode nya dalam bentuk README.md!
 4) Tentukan apakah menggunakan delay() atau milis()! Jelaskan pengaruhnya terhadap
 sistem
-  jawab
+
+Jawab
 1. Proses dari Input Keyboard hingga LED Menyala/Mati
 - Input Keyboard: Pengguna mengetik karakter ('1' atau '0') di keyboard dan menekan Enter melalui antarmuka Serial Monitor di komputer.
 - Transmisi Data: Komputer mengirimkan karakter tersebut dalam bentuk data serial melalui kabel USB menuju IC antarmuka USB-to-Serial pada Arduino, yang kemudian diteruskan ke pin RX (Receive) mikrokontroler.
@@ -106,7 +107,8 @@ Tampilan jika potensiometer dalam kondisi diputar paling kiri
 - ADC: 0 0% | setCursor(0, 0) dan Bar (level) | setCursor(0, 1)
 - Berikan penjelasan disetiap baris kode nya dalam bentuk README.md!
 4) Lengkapi table berikut berdasarkan pengamatan pada Serial Monitor
-  jawab
+  
+Jawab
 1. Protokol I2C menggunakan sistem Master-Slave. Pada rangkaian ini, Arduino bertindak sebagai Master (Sopir Bus) dan LCD bertindak sebagai Slave (Penumpang). Komunikasi hanya menggunakan dua jalur kabel, yaitu SDA (jalur data pada pin A4) dan SCL (jalur sinyal clock pada pin A5). Arduino memulai komunikasi dengan mengirimkan sinyal clock dan alamat unik I2C milik LCD (seperti 0x27 pada inisialisasi LiquidCrystal_I2C lcd(0x27, 16, 2);). Jika LCD merespons, Arduino kemudian mengirimkan instruksi (seperti inisialisasi, menghidupkan backlight, memindahkan kursor) atau data (karakter ASCII dari nilai sensor) untuk ditampilkan di layar.
 
 2. Pin tengah potensiometer (wiper) wajib dihubungkan ke pin Analog Arduino (A0) karena pin inilah yang mengeluarkan tegangan variabel hasil putaran.
