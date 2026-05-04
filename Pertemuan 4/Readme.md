@@ -2,7 +2,7 @@ Pertanyaan praktikum percobaan 1:
 1. Apa fungsi perintah analogRead() pada rangkaian praktikum ini?
 2. Mengapa diperlukan fungsi map() dalam program tersebut?
 3. Modifikasi program berikut agar servo hanya bergerak dalam rentang 30° hingga 150°, meskipun       potensiometer tetap memiliki rentang ADC 0–1023. Jelaskan program pada file README.md
-Jawab:
+  Jawab:
 1. Untuk membaca nilai tegangan analog dari potensiometer
 2. Nilai ADC (0-1023), sedangkan servo (0-180). map() digunakan untuk mengubah rentang nilai tersebut agar sesuai dengan kebutuhan servo.
 3. 
@@ -69,7 +69,7 @@ Pertanyaan praktikum percobaan 2:
 1. Jelaskan mengapa LED dapat diatur kecerahannya menggunakan fungsi analogWrite()!
 2. Apa hubungan antara nilai ADC (0–1023) dan nilai PWM (0–255)?
 3. Modifikasilah program berikut agar LED hanya menyala pada rentang kecerahan sedang, yaitu hanya    ketika nilai PWM berada pada rentang 50 sampai 200. Jelaskan program pada file README.md.
-Jawab:
+  Jawab:
 1. Karena fungsi ini menghasilkan sinyal PWM (Pulse Width Modulation). PWM bekerja dengan mengatur durasi sinyal HIGH dan LOW dalam satu periode (duty cycle). Semakin lama sinyal HIGH, semakin besar daya yang diterima LED sehingga terlihat lebih terang. Sebaliknya, jika durasi HIGH lebih kecil, LED akan terlihat redup.
 2. Hubungannya bersifat linier, di mana nilai ADC yang besar akan menghasilkan nilai PWM yang besar pula, sehingga output (kecerahan LED) meningkat secara proporsional.
 3. 
